@@ -1,0 +1,29 @@
+.container-fluid {
+  background-color: #908277;
+  color: white;
+}
+
+.container-border {
+  border-top: 0.5px white solid;
+  border-bottom: 0;
+}
+
+.copyright-space {
+  height: 5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color ease-in-out 0.3s;
+}
+
+a:hover {
+  color: rgb(196, 196, 196);
+}
+
+.logo {
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+}

@@ -14,7 +14,7 @@
         <a class="mx-4 pointer" (click)="onClickHome()">Home</a>
         <a class="mx-4 pointer" (click)="onClickAboutMe()">O mnie</a>
         <a class="mx-4 pointer" (click)="onClickPortfolio()">Portfolio</a>
-        <a class="mx-4 pointer" (click)="onClickOffer()">Oferta</a>
+        <a class="mx-4 pointer" [routerLink]="offerPath">Oferta</a>
         <a class="mx-4 pointer" (click)="onClickContact()">Kontakt</a>
       </div>
       <div *ngIf="!isCollapsed" class="me-4 pt-5 nav-list" @slideToggle>
@@ -22,7 +22,7 @@
           <a class="mx-4 mt-5 pointer" (click)="onClickHome()">Home</a>
           <a class="mx-4 mt-5 pointer" (click)="onClickAboutMe()">O mnie</a>
           <a class="mx-4 mt-5 pointer" (click)="onClickPortfolio()">Portfolio</a>
-          <a class="mx-4 pointer" (click)="onClickOffer()">Oferta</a>
+          <a class="mx-4 pointer" [routerLink]="offerPath">Oferta</a>
           <a class="mx-4 my-5 pointer" (click)="onClickContact()">Kontakt</a>
         </div>
       </div>

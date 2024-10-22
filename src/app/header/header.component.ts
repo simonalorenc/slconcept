@@ -33,6 +33,7 @@ export class HeaderComponent {
   isScreenLarge: boolean = false;
   toggleIcon: string = 'header/menu.svg';
   routes = AppRoutes;
+  offerPath = AppRoutes.Offer;
 
   constructor(
     private viewportScroller: ViewportScroller,
@@ -108,10 +109,6 @@ export class HeaderComponent {
 
   onClickPortfolio() {
     this.navigateToMain(AppSections.Portfolio);
-  }
-
-  onClickOffer() {
-    this.navigateToMain(AppSections.Offer);
   }
 
   onClickContact() {

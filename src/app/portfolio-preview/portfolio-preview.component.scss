@@ -1,0 +1,22 @@
+.img-1 {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background-color: pink;
+}
+
+button {
+    background-color: transparent;
+    color: #908277;
+    padding: 10px 20px;
+    border: 1px solid #908277;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #908277; /* Zmiana tła przy najechaniu */
+    color: white; /* Zmiana koloru tekstu */
+  }

@@ -19,7 +19,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
     ]),
     trigger('transparentBackground', [
       state('true', style({ backgroundColor: 'transparent' })),
-      state('false', style({ backgroundColor: '#000000' })),
+      state('false', style({ backgroundColor: '#908277' })),
       transition('* <=> *', [animate('300ms ease-in-out')]),
     ]),
   ],

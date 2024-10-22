@@ -10,6 +10,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  mailToLink: string = 'mailto:kancelaria@legalnyhr.pl';
+  mailToLink: string = 'mailto:slorenc.concept@gmail.com';
   privacyPolicyPath = AppRoutes.PrivacyPolicy;
 }

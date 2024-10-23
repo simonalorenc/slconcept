@@ -1,10 +1,12 @@
+@use "../../styles/global" as global;
+
 .container-fluid {
-  background-color: #908277;
-  color: white;
+  background-color: global.$background-primary;
+  color: global.$background-light;
 }
 
 .container-border {
-  border-top: 0.5px white solid;
+  border-top: 0.5px global.$background-light solid;
   border-bottom: 0;
 }
 
@@ -13,7 +15,7 @@
 }
 
 a {
-  color: white;
+  color: global.$background-light;
   text-decoration: none;
   transition: color ease-in-out 0.3s;
 }
@@ -23,7 +25,5 @@ a:hover {
 }
 
 .logo {
-  background-color: pink;
-  width: 200px;
-  height: 200px;
+  width: 13rem;
 }

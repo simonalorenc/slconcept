@@ -1,4 +1,13 @@
+@use "../../styles/global" as global;
+
 .container-fluid {
-    background-color: pink;
-    height: 75vh;
+  height: 100vh;
+  color: global.$background-light;
+}
+
+.main-image {
+  position: relative;
+  background-image: url("../../../public/home/main-photo.png");
+  background-size: cover;
+  background-position: center;
 }

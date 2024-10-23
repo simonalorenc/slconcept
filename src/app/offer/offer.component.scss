@@ -1,6 +1,8 @@
+@use "../../styles/global" as global;
+
 .container-fluid {
-    background-color: pink;
-    color: white;
+    background-color: global.$background-primary;
+    color: global.$background-light;
 }
 
 .offer-image {

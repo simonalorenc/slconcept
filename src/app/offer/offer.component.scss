@@ -6,10 +6,50 @@
 }
 
 .offer-image {
-    padding-top: 100px;
+    background-image: url("../../../public/offer/offer.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 li {
     line-height: 30px;
     list-style: none;
 }
+
+.title {
+    position: absolute;
+    bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.offer-image-footer {
+    background-image: url("../../../public/offer/offer_footer.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+.border-right {
+    border-right: none;
+    border-bottom: solid 0.5px #ece9e4;
+}
+
+@media (min-width: 768px) { /* For large screens */
+    .offer-image {
+      min-height: 70vh;
+    }
+
+    .border-right {
+        border-right: solid 0.5px #ece9e4;
+        border-bottom: none;
+    }
+
+    .offer-image-footer {
+        min-height: 45vh;
+    }
+  }

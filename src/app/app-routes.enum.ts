@@ -1,7 +1,8 @@
 export enum AppRoutes {
     Main = '',
     PrivacyPolicy = 'polityka-prywatnosci',
-    Offer = 'oferta'
+    Offer = 'oferta',
+    Portfolio = 'projekty'
   }
   
   export enum AppSections {

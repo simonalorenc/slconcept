@@ -34,6 +34,7 @@ export class HeaderComponent {
   toggleIcon: string = 'header/menu.svg';
   routes = AppRoutes;
   offerPath = AppRoutes.Offer;
+  portfolioPath = AppRoutes.Portfolio;
 
   constructor(
     private viewportScroller: ViewportScroller,

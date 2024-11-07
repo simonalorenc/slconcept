@@ -1,0 +1,37 @@
+@use "../../styles/global" as global;
+
+.container-fluid {
+  background-color: global.$background-light;
+  color: global.$background-primary;
+}
+
+.container {
+  border-top: 1px solid global.$background-primary;
+}
+
+.text-container {
+  text-align: justify;
+}
+
+.image {
+  background-image: url("../../../public/offer-preview/1.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+button {
+  background-color: transparent;
+  color: #908277;
+  padding: 10px 20px;
+  border: 1px solid global.$background-primary;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: global.$background-primary;
+  color: global.$background-light;
+}

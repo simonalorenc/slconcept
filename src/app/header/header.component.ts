@@ -33,6 +33,7 @@ export class HeaderComponent {
   isScreenLarge: boolean = false;
   toggleIcon: string = 'header/menu.svg';
   routes = AppRoutes;
+  aboutMePath = AppRoutes.AboutMe;
   offerPath = AppRoutes.Offer;
   portfolioPath = AppRoutes.Portfolio;
 

@@ -1,5 +1,10 @@
 @use "../../styles/global" as global;
 
+.container-fluid {
+  background-color: global.$background-light;
+  color: global.$background-primary;
+}
+
 .offer-image {
   background-image: url("../../../public/portfolio/1.jpg");
   background-size: cover;

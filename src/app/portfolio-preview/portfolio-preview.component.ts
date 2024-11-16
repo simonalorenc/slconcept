@@ -11,5 +11,4 @@ import { RouterModule } from '@angular/router';
 })
 export class PortfolioPreviewComponent {
   portfolioPath = AppRoutes.Portfolio;
-
 }

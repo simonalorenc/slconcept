@@ -3,7 +3,8 @@ export enum AppRoutes {
     PrivacyPolicy = 'polityka-prywatnosci',
     Offer = 'oferta',
     Portfolio = 'projekty',
-    AboutMe = 'o-mnie'
+    AboutMe = 'simona-lorenc',
+    PortfolioDetail = 'details',
   }
   
   export enum AppSections {

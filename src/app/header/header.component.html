@@ -11,7 +11,7 @@
         <img src="{{ toggleIcon }}" class="icon" alt="menu" />
     </div>
       <div class="d-none d-lg-flex align-items-center mx-4">
-        <a class="mx-4 pointer" (click)="onClickHome()">Home</a>
+        <a class="mx-4 pointer" [routerLink]="mainPath">Home</a>
         <a class="mx-4 pointer" [routerLink]="aboutMePath">O mnie</a>
         <a class="mx-4 pointer" [routerLink]="portfolioPath">Portfolio</a>
         <a class="mx-4 pointer" [routerLink]="offerPath">Oferta</a>
@@ -19,7 +19,7 @@
       </div>
       <div *ngIf="!isCollapsed" class="me-4 pt-5 nav-list" @slideToggle>
         <div class="d-flex flex-column">
-          <a class="mx-4 mt-5 pointer" (click)="onClickHome()">Home</a>
+          <a class="mx-4 mt-5 pointer" [routerLink]="mainPath">Home</a>
           <a class="mx-4 mt-5 pointer" [routerLink]="aboutMePath">O mnie</a>
           <a class="mx-4 mt-5 pointer" [routerLink]="portfolioPath">Portfolio</a>
           <a class="mx-4 mt-5 pointer" [routerLink]="offerPath">Oferta</a>

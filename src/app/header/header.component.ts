@@ -32,7 +32,8 @@ export class HeaderComponent {
   isScrollAnimation: boolean = true;
   isScreenLarge: boolean = false;
   toggleIcon: string = 'header/menu.svg';
-  routes = AppRoutes;
+
+  mainPath = AppRoutes.Main;
   aboutMePath = AppRoutes.AboutMe;
   offerPath = AppRoutes.Offer;
   portfolioPath = AppRoutes.Portfolio;
@@ -101,26 +102,7 @@ export class HeaderComponent {
     return window.scrollY < this.TRANSPARENT_SCROLL_OFFSET;
   }
 
-  onClickHome() {
-    this.navigateToMain(AppRoutes.Main);
-  }
-
-  onClickAboutMe() {
-    this.navigateToMain(AppSections.AboutMe);
-  }
-
-  onClickPortfolio() {
-    this.navigateToMain(AppSections.Portfolio);
-  }
-
   onClickContact() {
-    this.navigateToMain(AppSections.Contact);
-  }
-
-  private navigateToMain(fragment: string) {
-    this.router.navigate([AppRoutes.Main], { fragment: fragment });
-    if (!this.isCollapsed) {
-      this.toggleCollapse();
-    }
+    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight])
   }
 }

@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { NavigationEnd, RouterModule, Scroll } from '@angular/router';
-import { AppRoutes, AppSections } from '../app-routes.enum';
+import { AppRoutes } from '../app-routes.enum';
 import { Router } from '@angular/router';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { animate, state, style, transition, trigger } from '@angular/animations';
@@ -80,12 +80,9 @@ export class HeaderComponent {
   }
 
   private handleNavigationEndEvent(event: NavigationEnd) {
-    const currentUrl = this.router.routerState.snapshot.url;
-    const isPrivacyPolicyComponent = currentUrl.includes(
-      AppRoutes.PrivacyPolicy
-    );
-    this.isScrollAnimation = !isPrivacyPolicyComponent;
-    this.isTransparent = !isPrivacyPolicyComponent;
+    const isCurrentRouteRoot = this.router.url === '/';
+    this.isScrollAnimation = isCurrentRouteRoot;
+    this.isTransparent = isCurrentRouteRoot;
   }
 
   private checkScreenWidth(): void {

@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class ContactPreviewComponent {
 
+  constructor(
+    private viewportScroller: ViewportScroller
+  ){}
+
+
+  onClickContact() {
+    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight])
+  }
 }

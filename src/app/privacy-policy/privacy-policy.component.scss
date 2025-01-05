@@ -1,0 +1,6 @@
+@use "../../styles/global" as global;
+
+.container-fluid {
+    background-color: global.$background-light;
+    color: global.$background-primary;
+}

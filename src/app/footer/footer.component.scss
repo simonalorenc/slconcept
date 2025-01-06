@@ -3,7 +3,7 @@
 .container-fluid {
   color: white;
   position: relative;
-  background-image: url("../../../public/footer/footer-background.jpg");
+  background-image: url("../../../public/footer/footer-background.avif");
   background-size: cover;
   background-position: bottom;
   height: 70vh;
@@ -59,6 +59,6 @@ a:hover {
 
 @media (min-width: 768px) {
   .text-md-start {
-    text-align: left !important; /* Wymuszenie wyrównania tekstu do lewej */
+    text-align: left !important;
   }
 }

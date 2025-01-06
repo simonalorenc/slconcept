@@ -9,7 +9,7 @@
     background-image: url("../../../public/offer/offer.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 40vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     position: relative;
@@ -25,10 +25,10 @@ li {
     text-transform: uppercase;
     font-size: 3rem;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    text-shadow: 1px 1px 5px global.$background-primary;
 }
 
 .offer-image-footer {
@@ -44,10 +44,6 @@ li {
 }
 
 @media (min-width: 768px) { /* For large screens */
-    .offer-image {
-      min-height: 70vh;
-    }
-
     .border-right {
         border-right: solid 0.5px #ece9e4;
         border-bottom: none;

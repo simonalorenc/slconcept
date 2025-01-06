@@ -61,6 +61,18 @@ body {
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+.img-portfolio {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+
+.img-text-shaddow {
+  text-shadow: 1px 1px 5px rgb(152, 152, 152);
+}
+
 @media (max-width: 1199.98px) {
   html {
     font-size: 15px;

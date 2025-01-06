@@ -9,7 +9,7 @@
   background-image: url("../../../public/portfolio/1.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 65vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -23,12 +23,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.img-1 {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  max-width: 100%;
 }

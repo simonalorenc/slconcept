@@ -6,10 +6,11 @@
 }
 
 .main-image {
-  position: relative;
-  background-image: url("../../../public/home/main-photo.avif");
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
 }
 
 .logo {

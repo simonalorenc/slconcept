@@ -3,10 +3,15 @@
 .container-fluid {
   color: white;
   position: relative;
-  background-image: url("../../../public/footer/footer-background.avif");
-  background-size: cover;
-  background-position: bottom;
   height: 70vh;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  z-index: -1;
 }
 
 .container-fluid::after {
@@ -21,7 +26,7 @@
   z-index: 1;
 }
 
-.container-fluid > * {
+.container > * {
   position: relative;
   z-index: 2;
 }

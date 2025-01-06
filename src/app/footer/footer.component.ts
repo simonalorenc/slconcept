@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { AppRoutes } from '../app-routes.enum';
 import { RouterModule } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, NgOptimizedImage],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

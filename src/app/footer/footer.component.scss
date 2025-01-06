@@ -1,8 +1,33 @@
 @use "../../styles/global" as global;
 
 .container-fluid {
+  color: white;
+  position: relative;
+  background-image: url("../../../public/footer/footer-background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 70vh;
+}
+
+.container-fluid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: global.$background-primary;
-  color: global.$background-light;
+  opacity: 0.70;
+  z-index: 1;
+}
+
+.container-fluid > * {
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  height: 100%;
 }
 
 .container-border {
@@ -15,15 +40,25 @@
 }
 
 a {
-  color: global.$background-light;
+  color: white;
   text-decoration: none;
   transition: color ease-in-out 0.3s;
 }
 
 a:hover {
-  color: rgb(196, 196, 196);
+  color: global.$background-light;
 }
 
 .logo {
   width: 13rem;
+}
+
+.fill {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .text-md-start {
+    text-align: left !important; /* Wymuszenie wyrównania tekstu do lewej */
+  }
 }

@@ -4,7 +4,7 @@
       <div class="text-center pt-5 title">{{ projectTitle }}</div>
     </div>
     <div
-      class="row py-5 px-5 mx-3 mt-3 d-flex justify-content-between img-container"
+      class="row py-5 px-5 mx-3 mt-3 d-flex justify-content-between"
     >
       <div
         *ngFor="let image of images"
@@ -12,7 +12,7 @@
       >
         <img
           [src]="image.imageUrl"
-          class="img-portfolio"
+          class=""
           [alt]=""
         />
       </div>

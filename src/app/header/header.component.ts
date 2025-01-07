@@ -1,9 +1,15 @@
 import { Component, HostListener } from '@angular/core';
-import { NavigationEnd, RouterModule, Scroll } from '@angular/router';
+import { NavigationEnd, NavigationStart, RouterModule, Scroll } from '@angular/router';
 import { AppRoutes } from '../app-routes.enum';
 import { Router } from '@angular/router';
 import { CommonModule, ViewportScroller } from '@angular/common';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-header',
@@ -48,6 +54,8 @@ export class HeaderComponent {
         this.handleScrollEvent(event);
       } else if (event instanceof NavigationEnd) {
         this.handleNavigationEndEvent(event);
+      } else if (event instanceof NavigationStart) {
+        this.isCollapsed = true;
       }
     });
   }
@@ -92,7 +100,6 @@ export class HeaderComponent {
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
     this.toggleIcon = this.isCollapsed ? 'header/menu.svg' : 'header/close.svg';
-    console.log(this.isCollapsed)
   }
 
   private isTransparentScrollOffset(): boolean {
@@ -100,6 +107,7 @@ export class HeaderComponent {
   }
 
   onClickContact() {
-    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight])
+    this.isCollapsed = true;
+    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight]);
   }
 }

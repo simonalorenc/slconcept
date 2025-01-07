@@ -5,37 +5,9 @@
     color: global.$background-primary;
 }
 
-.offer-image {
-    background-image: url("../../../public/offer/offer.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
 li {
     line-height: 30px;
     list-style: none;
-}
-
-.title {
-    color: white;
-    text-transform: uppercase;
-    font-size: 3rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 1px 1px 5px global.$background-primary;
-}
-
-.offer-image-footer {
-    background-image: url("../../../public/offer/offer_footer.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
 }
 
 .border-right {
@@ -47,9 +19,5 @@ li {
     .border-right {
         border-right: solid 0.5px #ece9e4;
         border-bottom: none;
-    }
-
-    .offer-image-footer {
-        min-height: 45vh;
     }
   }

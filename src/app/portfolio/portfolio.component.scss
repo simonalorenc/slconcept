@@ -4,23 +4,3 @@
   background-color: global.$background-light;
   color: global.$background-primary;
 }
-
-.offer-image {
-  background-image: url("../../../public/portfolio/1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.title {
-  color: white;
-  text-transform: uppercase;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}

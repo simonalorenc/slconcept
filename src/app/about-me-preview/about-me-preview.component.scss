@@ -8,23 +8,3 @@
 .container {
   border-top: 1px solid global.$background-primary;
 }
-
-.text-container {
-  text-align: justify;
-}
-
-button {
-  background-color: transparent;
-  color: #908277;
-  padding: 10px 20px;
-  border: 1px solid global.$background-primary;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: global.$background-primary;
-  color: global.$background-light;
-}

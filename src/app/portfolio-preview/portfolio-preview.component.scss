@@ -4,19 +4,3 @@
   background-color: global.$background-light;
   color: global.$background-primary;
 }
-
-button {
-  background-color: transparent;
-  color: global.$background-primary;
-  padding: 10px 20px;
-  border: 1px solid global.$background-primary;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: global.$background-primary;
-  color: global.$background-light;
-}

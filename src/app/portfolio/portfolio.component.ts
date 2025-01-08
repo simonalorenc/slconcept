@@ -16,22 +16,22 @@ export class PortfolioComponent {
   constructor(private router: Router) {}
 
   projects = [
-    { title: 'projekt-1', imageUrl: 'portfolio/1/3.avif' },
-    { title: 'projekt-2', imageUrl: 'portfolio/2/1.avif' },
-    { title: 'projekt-3', imageUrl: 'portfolio/3/3.avif' },
-    { title: 'projekt-4', imageUrl: 'portfolio/4/4.avif' },
-    { title: 'projekt-5', imageUrl: 'portfolio/5/1.avif' },
-    { title: 'projekt-6', imageUrl: 'portfolio/6/1.avif' },
-    { title: 'projekt-7', imageUrl: 'portfolio/7/1.avif' },
-    { title: 'projekt-8', imageUrl: 'portfolio/8/1.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/9/4.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/10/1.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/11/1.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/12/1.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/13/1.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/14/4.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/15/1.avif' },
-    { title: 'projekt-9', imageUrl: 'portfolio/16/9.avif' },
+    { id: '1', title: 'projekt-1', imageUrl: 'portfolio/1/3.avif' },
+    { id: '2', title: 'projekt-2', imageUrl: 'portfolio/2/1.avif' },
+    { id: '3', title: 'projekt-3', imageUrl: 'portfolio/3/3.avif' },
+    { id: '4', title: 'projekt-4', imageUrl: 'portfolio/4/4.avif' },
+    { id: '5', title: 'projekt-5', imageUrl: 'portfolio/5/1.avif' },
+    { id: '6', title: 'projekt-6', imageUrl: 'portfolio/6/1.avif' },
+    { id: '7', title: 'projekt-7', imageUrl: 'portfolio/7/1.avif' },
+    { id: '8', title: 'projekt-8', imageUrl: 'portfolio/8/1.avif' },
+    { id: '9', title: 'projekt-9', imageUrl: 'portfolio/9/4.avif' },
+    { id: '10', title: 'projekt-9', imageUrl: 'portfolio/10/1.avif' },
+    { id: '11', title: 'projekt-9', imageUrl: 'portfolio/11/1.avif' },
+    { id: '12', title: 'projekt-9', imageUrl: 'portfolio/12/1.avif' },
+    { id: '13', title: 'projekt-9', imageUrl: 'portfolio/13/1.avif' },
+    { id: '14', title: 'projekt-9', imageUrl: 'portfolio/14/4.avif' },
+    { id: '15', title: 'projekt-9', imageUrl: 'portfolio/15/1.avif' },
+    { id: '16', title: 'projekt-9', imageUrl: 'portfolio/16/9.avif' },
   ];
 
   goToProject(title: string) {

@@ -7,19 +7,19 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './portfolio-detail.component.html',
-  styleUrl: './portfolio-detail.component.scss'
+  styleUrl: './portfolio-detail.component.scss',
 })
 export class PortfolioDetailComponent {
   projectTitle: string | null = null;
 
   images = [
-    {imageUrl: 'portfolio-preview/1.png'},
-    {imageUrl: 'portfolio-preview/1.png'},
-    {imageUrl: 'portfolio-preview/1.png'},
-    {imageUrl: 'portfolio-preview/1.png'},
-    {imageUrl: 'portfolio-preview/1.png'},
-    {imageUrl: 'portfolio-preview/1.png'}
-  ]
+    { imageUrl: 'portfolio-preview/1.png' },
+    { imageUrl: 'portfolio-preview/1.png' },
+    { imageUrl: 'portfolio-preview/1.png' },
+    { imageUrl: 'portfolio-preview/1.png' },
+    { imageUrl: 'portfolio-preview/1.png' },
+    { imageUrl: 'portfolio-preview/1.png' },
+  ];
 
   constructor(private route: ActivatedRoute) {}
 

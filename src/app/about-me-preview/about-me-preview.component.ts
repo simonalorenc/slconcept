@@ -8,7 +8,7 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [RouterModule, NgOptimizedImage],
   templateUrl: './about-me-preview.component.html',
-  styleUrl: './about-me-preview.component.scss'
+  styleUrl: './about-me-preview.component.scss',
 })
 export class AboutMePreviewComponent {
   aboutMePath = AppRoutes.AboutMe;

@@ -8,7 +8,7 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [RouterModule, NgOptimizedImage],
   templateUrl: './portfolio-preview.component.html',
-  styleUrl: './portfolio-preview.component.scss'
+  styleUrl: './portfolio-preview.component.scss',
 })
 export class PortfolioPreviewComponent {
   portfolioPath = AppRoutes.Portfolio;

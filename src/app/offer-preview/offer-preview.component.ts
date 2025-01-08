@@ -8,7 +8,7 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [RouterModule, NgOptimizedImage],
   templateUrl: './offer-preview.component.html',
-  styleUrl: './offer-preview.component.scss'
+  styleUrl: './offer-preview.component.scss',
 })
 export class OfferPreviewComponent {
   offerPath = AppRoutes.Offer;

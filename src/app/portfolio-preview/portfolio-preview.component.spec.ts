@@ -8,9 +8,8 @@ describe('PortfolioPreviewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PortfolioPreviewComponent]
-    })
-    .compileComponents();
+      imports: [PortfolioPreviewComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PortfolioPreviewComponent);
     component = fixture.componentInstance;

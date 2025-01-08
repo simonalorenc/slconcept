@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [NgOptimizedImage],
   templateUrl: './offer.component.html',
-  styleUrl: './offer.component.scss'
+  styleUrl: './offer.component.scss',
 })
-export class OfferComponent {
-
-}
+export class OfferComponent {}

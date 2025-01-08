@@ -1,15 +1,15 @@
 @use "../../styles/global" as global;
 
 .container-fluid {
-    background-color: global.$background-light;
-    color: global.$background-primary;
+  background-color: global.$background-light;
+  color: global.$background-primary;
 }
 
 .container {
-    height: 80vh;
+  height: 80vh;
 }
 
 .border {
-    padding: 50px 200px;
-    border: 1px global.$background-primary solid;
+  padding: 50px 200px;
+  border: 1px global.$background-primary solid;
 }

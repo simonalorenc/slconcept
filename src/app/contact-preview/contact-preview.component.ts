@@ -6,16 +6,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [NgOptimizedImage],
   templateUrl: './contact-preview.component.html',
-  styleUrl: './contact-preview.component.scss'
+  styleUrl: './contact-preview.component.scss',
 })
 export class ContactPreviewComponent {
-
-  constructor(
-    private viewportScroller: ViewportScroller
-  ){}
-
+  constructor(private viewportScroller: ViewportScroller) {}
 
   onClickContact() {
-    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight])
+    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight]);
   }
 }

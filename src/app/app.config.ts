@@ -8,7 +8,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled'})),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({ anchorScrolling: 'enabled' })
+    ),
     provideClientHydration(),
     provideAnimationsAsync(),
   ],

@@ -1,23 +1,24 @@
 @use "../../styles/global" as global;
 
 .container-fluid {
-    background-color: global.$background-light;
-    color: global.$background-primary;
+  background-color: global.$background-light;
+  color: global.$background-primary;
 }
 
 li {
-    line-height: 30px;
-    list-style: none;
+  line-height: 30px;
+  list-style: none;
 }
 
 .border-right {
-    border-right: none;
-    border-bottom: solid 0.5px #ece9e4;
+  border-right: none;
+  border-bottom: solid 0.5px #ece9e4;
 }
 
-@media (min-width: 768px) { /* For large screens */
-    .border-right {
-        border-right: solid 0.5px #ece9e4;
-        border-bottom: none;
-    }
+@media (min-width: 768px) {
+  /* For large screens */
+  .border-right {
+    border-right: solid 0.5px #ece9e4;
+    border-bottom: none;
   }
+}

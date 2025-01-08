@@ -9,10 +9,15 @@ import { AboutMePreviewComponent } from '../about-me-preview/about-me-preview.co
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [HomeComponent, PortfolioPreviewComponent, OfferPreviewComponent, AboutMePreviewComponent, ContactPreviewComponent, OpinionsComponent],
+  imports: [
+    HomeComponent,
+    PortfolioPreviewComponent,
+    OfferPreviewComponent,
+    AboutMePreviewComponent,
+    ContactPreviewComponent,
+    OpinionsComponent,
+  ],
   templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.scss'
+  styleUrl: './main-page.component.scss',
 })
-export class MainPageComponent {
-
-}
+export class MainPageComponent {}

@@ -8,7 +8,7 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [RouterModule, NgOptimizedImage],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
   mailToLink: string = 'mailto:slorenc.concept@gmail.com';

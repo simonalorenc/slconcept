@@ -1,13 +1,8 @@
-import { Component, HostListener } from '@angular/core';
-import {
-  NavigationEnd,
-  NavigationStart,
-  RouterModule,
-  Scroll,
-} from '@angular/router';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { NavigationEnd, RouterModule, Scroll } from '@angular/router';
 import { AppRoutes } from '../app-routes.enum';
 import { Router } from '@angular/router';
-import { CommonModule, ViewportScroller } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import {
   animate,
   state,
@@ -35,9 +30,8 @@ import {
     ]),
   ],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   private TRANSPARENT_SCROLL_OFFSET: number = 50;
-  private HEADER_OFFSET: number = 50;
   isCollapsed: boolean = true;
   isTransparent: boolean = true;
   isScrollAnimation: boolean = true;
@@ -49,20 +43,23 @@ export class HeaderComponent {
   offerPath = AppRoutes.Offer;
   portfolioPath = AppRoutes.Portfolio;
 
-  constructor(
-    private viewportScroller: ViewportScroller,
-    private router: Router
-  ) {
-    viewportScroller.setOffset([0, this.HEADER_OFFSET]);
-    router.events.subscribe((event) => {
-      if (event instanceof Scroll) {
-        this.handleScrollEvent(event);
-      } else if (event instanceof NavigationEnd) {
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
         this.handleNavigationEndEvent(event);
-      } else if (event instanceof NavigationStart) {
+      } else if (event instanceof Scroll) {
         this.collapseIfExpanded();
       }
     });
+  }
+
+  private handleNavigationEndEvent(event: NavigationEnd) {
+    this.collapseIfExpanded();
+    const isCurrentRouteRoot = this.router.url === '/';
+    this.isScrollAnimation = isCurrentRouteRoot;
+    this.isTransparent = isCurrentRouteRoot;
   }
 
   @HostListener('window: scroll', ['$event'])
@@ -80,24 +77,6 @@ export class HeaderComponent {
     }
   }
 
-  private handleScrollEvent(event: Scroll) {
-    if (event.anchor) {
-      setTimeout(() => {
-        this.viewportScroller.scrollToAnchor(event.anchor!);
-      });
-    } else if (event.position) {
-      this.viewportScroller.scrollToPosition(event.position);
-    } else {
-      this.viewportScroller.scrollToPosition([0, 0]);
-    }
-  }
-
-  private handleNavigationEndEvent(event: NavigationEnd) {
-    const isCurrentRouteRoot = this.router.url === '/';
-    this.isScrollAnimation = isCurrentRouteRoot;
-    this.isTransparent = isCurrentRouteRoot;
-  }
-
   private checkScreenWidth(): void {
     this.isScreenLarge = window.innerWidth > 992;
   }
@@ -113,7 +92,11 @@ export class HeaderComponent {
 
   onClickContact() {
     this.collapseIfExpanded();
-    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight]);
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      left: 0,
+      behavior: 'smooth',
+    });
   }
 
   private collapseIfExpanded() {

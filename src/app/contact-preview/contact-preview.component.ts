@@ -1,4 +1,4 @@
-import { NgOptimizedImage, ViewportScroller } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,9 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './contact-preview.component.scss',
 })
 export class ContactPreviewComponent {
-  constructor(private viewportScroller: ViewportScroller) {}
+  constructor() {}
 
   onClickContact() {
-    this.viewportScroller.scrollToPosition([0, document.body.scrollHeight]);
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      left: 0,
+      behavior: 'smooth',
+    });
   }
 }

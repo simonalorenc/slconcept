@@ -8,8 +8,8 @@ import { Project } from './project';
 export class ProjectsService {
   private projects = [
     {
-      id: 'projekt-1',
-      title: 'projekt 1',
+      id: 'mieszkanie_vintage_w_krakowie',
+      title: 'Mieszkanie vintage w Krakowie',
       basePath: 'portfolio/1/',
       mainImage: '3.avif',
       images: [
@@ -31,8 +31,8 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-2',
-      title: 'projekt 2',
+      id: 'mieszkanie_na_poddaszu_w_krakowie',
+      title: 'Mieszkanie na poddaszu w Krakowie',
       basePath: 'portfolio/2/',
       mainImage: '1.avif',
       images: [
@@ -52,8 +52,8 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-3',
-      title: 'projekt 3',
+      id: 'eleganckie_mieszkanie_na_krakowskim_podgórzu',
+      title: 'Eleganckie mieszkanie na Krakowskim Podgórzu',
       basePath: 'portfolio/3/',
       mainImage: '3.avif',
       images: [
@@ -69,10 +69,10 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-4',
-      title: 'projekt 4',
+      id: 'mieszkanie_w_mielcu',
+      title: 'Mieszkanie w Mielcu',
       basePath: 'portfolio/4/',
-      mainImage: '4.avif',
+      mainImage: '3.avif',
       images: [
         '1.avif',
         '2.avif',
@@ -95,15 +95,15 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-5',
-      title: 'projekt 5',
+      id: 'łazienka_w_kolorach_ziemi',
+      title: 'Łazienka w kolorach ziemi',
       basePath: 'portfolio/5/',
       mainImage: '1.avif',
       images: ['1.avif', '2.avif', '3.avif', '4.avif'],
     },
     {
-      id: 'projekt-6',
-      title: 'projekt 6',
+      id: 'mieszkanie_vintage_kraków',
+      title: 'Mieszkanie vintage w Krakowie',
       basePath: 'portfolio/6/',
       mainImage: '1.avif',
       images: [
@@ -118,22 +118,22 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-7',
-      title: 'projekt 7',
+      id: 'elegancka_kuchnia_w_szczecinie',
+      title: 'Elegancka kuchnia w Szczecinie',
       basePath: 'portfolio/7/',
       mainImage: '1.avif',
       images: ['1.avif', '2.avif', '3.avif', '4.avif', '5.avif'],
     },
     {
-      id: 'projekt-8',
-      title: 'projekt 8',
+      id: 'łazienka_w_szczecinie',
+      title: 'Łazienka w Szczecinie',
       basePath: 'portfolio/8/',
       mainImage: '1.avif',
       images: ['1.avif', '2.avif', '3.avif', '4.avif'],
     },
     {
-      id: 'projekt-9',
-      title: 'projekt 9',
+      id: 'dom_pod_mielcem',
+      title: 'Dom pod Mielcem',
       basePath: 'portfolio/9/',
       mainImage: '4.avif',
       images: [
@@ -153,8 +153,8 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-10',
-      title: 'projekt 10',
+      id: 'dom_pod_mielcem_w_jasnych_odcieniach',
+      title: 'Dom pod Mielcem w jasnych odcieniach',
       basePath: 'portfolio/10/',
       mainImage: '1.avif',
       images: [
@@ -169,8 +169,8 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-11',
-      title: 'projekt 11',
+      id: 'dom_mielec',
+      title: 'Dom Mielec',
       basePath: 'portfolio/11/',
       mainImage: '1.avif',
       images: [
@@ -180,30 +180,28 @@ export class ProjectsService {
         '4.avif',
         '5.avif',
         '6.avif',
-        '7.avif',
-        '8.avif',
         '9.avif',
         '10.avif',
         '11.avif',
       ],
     },
     {
-      id: 'projekt-12',
-      title: 'projekt 12',
+      id: 'kuchnia_w_szczecinie',
+      title: 'Kuchnia w Szczecinie',
       basePath: 'portfolio/12/',
       mainImage: '1.avif',
       images: ['1.avif', '2.avif', '3.avif'],
     },
     {
-      id: 'projekt-13',
-      title: 'projekt 13',
+      id: 'łazienka_w_stylu_loftowym',
+      title: 'Łazienka w stylu loftowym',
       basePath: 'portfolio/13/',
       mainImage: '1.avif',
       images: ['1.avif', '2.avif', '3.avif', '4.avif'],
     },
     {
-      id: 'projekt-14',
-      title: 'projekt 14',
+      id: 'mieszkanie_mielec',
+      title: 'Mieszkanie Mielec',
       basePath: 'portfolio/14/',
       mainImage: '4.avif',
       images: [
@@ -217,8 +215,8 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-15',
-      title: 'projekt 15',
+      id: 'nowoczesne_mieszkanie_w_krakowie',
+      title: 'Nowoczesne mieszkanie w Krakowie',
       basePath: 'portfolio/15/',
       mainImage: '1.avif',
       images: [
@@ -233,8 +231,8 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'projekt-16',
-      title: 'projekt 16',
+      id: 'elegancki_dom_pod_mielcem',
+      title: 'Elegancki dom pod Mielcem',
       basePath: 'portfolio/16/',
       mainImage: '9.avif',
       images: [

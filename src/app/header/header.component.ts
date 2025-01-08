@@ -1,5 +1,10 @@
 import { Component, HostListener } from '@angular/core';
-import { NavigationEnd, NavigationStart, RouterModule, Scroll } from '@angular/router';
+import {
+  NavigationEnd,
+  NavigationStart,
+  RouterModule,
+  Scroll,
+} from '@angular/router';
 import { AppRoutes } from '../app-routes.enum';
 import { Router } from '@angular/router';
 import { CommonModule, ViewportScroller } from '@angular/common';
@@ -55,7 +60,7 @@ export class HeaderComponent {
       } else if (event instanceof NavigationEnd) {
         this.handleNavigationEndEvent(event);
       } else if (event instanceof NavigationStart) {
-        this.isCollapsed = true;
+        this.collapseIfExpanded();
       }
     });
   }
@@ -107,7 +112,13 @@ export class HeaderComponent {
   }
 
   onClickContact() {
-    this.isCollapsed = true;
+    this.collapseIfExpanded();
     this.viewportScroller.scrollToPosition([0, document.body.scrollHeight]);
+  }
+
+  private collapseIfExpanded() {
+    if (!this.isCollapsed) {
+      this.toggleCollapse();
+    }
   }
 }

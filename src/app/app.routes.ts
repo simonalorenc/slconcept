@@ -17,7 +17,7 @@ export const routes: Routes = [
     component: PortfolioComponent,
   },
   {
-    path: `${AppRoutes.Portfolio}/:title`,
+    path: `${AppRoutes.Portfolio}/:id`,
     component: PortfolioDetailComponent,
   },
   { path: AppRoutes.AboutMe, component: AboutMeComponent },

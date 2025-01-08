@@ -4,3 +4,12 @@
   background-color: global.$background-light;
   color: global.$background-primary;
 }
+
+.img-container {
+  position: relative;
+  height: 75vh;
+}
+
+.img {
+  object-fit: contain;
+}

@@ -5,11 +5,7 @@
   color: global.$background-primary;
 }
 
-.img-container {
-  position: relative;
-  height: 75vh;
-}
-
-.img {
-  object-fit: contain;
+.img-thumb {
+  max-height: 30vh;
+  width: auto;
 }

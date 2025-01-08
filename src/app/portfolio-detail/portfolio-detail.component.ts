@@ -2,17 +2,23 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectsService } from '../portfolio/data/projects.service';
+import { LightgalleryModule } from 'lightgallery/angular';
 
 @Component({
   selector: 'app-portfolio-detail',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage],
+  imports: [CommonModule, NgOptimizedImage, LightgalleryModule],
   templateUrl: './portfolio-detail.component.html',
   styleUrl: './portfolio-detail.component.scss',
 })
 export class PortfolioDetailComponent implements OnInit {
   title: string = '';
   images: string[] = [];
+
+  settings = {
+    counter: true,
+    download: false
+};
 
   constructor(
     private route: ActivatedRoute,

@@ -4,13 +4,13 @@
       <div class="pt-5">
         <div class="text-center pt-5 title">{{ title }}</div>
       </div>
-
       <div class="row py-5 px-5 mx-3 mt-3 d-flex justify-content-center">
-        <div *ngFor="let image of images" class="col-12 img-container">
-          <img [ngSrc]="image" class="img" [alt]="" fill />
-        </div>
+        <lightgallery [settings]="settings">
+          <a *ngFor="let image of images" [href]="image" class="col-1">
+            <img [src]="image" class="img-thumb" />
+          </a>
+        </lightgallery>
       </div>
-
     </div>
   </div>
 </div>

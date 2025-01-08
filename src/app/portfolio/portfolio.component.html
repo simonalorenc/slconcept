@@ -1,20 +1,23 @@
 <div class="container-fluid g-0">
-  <div class="row d-flex justify-content-center g-0">
-    <div class="img-header-container">
-      <img class="img-header" ngSrc="portfolio-preview/1.avif" fill priority />
-      <div class="text-center pt-5 header-title">Projekty</div>
-    </div>
-    <div class="row py-5 px-5 mx-3 mt-3 d-flex justify-content-between">
+  <div class="img-header-container">
+    <img class="img-header" ngSrc="portfolio-preview/1.avif" fill />
+    <div class="text-center pt-5 header-title">Projekty</div>
+  </div>
+  <div class="container g-0">
+    <div class="row py-4 justify-content-between">
       <div
         *ngFor="let project of projects"
-        class="col-12 col-md-6 col-xl-4 py-4"
+        class="col-12 col-md-6 col-xl-4 py-3"
       >
-        <img
-          [src]="project.imageUrl"
-          class="img-preview pointer"
-          [routerLink]="['/projekty', project.title]"
-          [alt]="project.title"
-        />
+        <div class="img-preview-container">
+          <img
+            [ngSrc]="project.imageUrl"
+            class="img-preview pointer"
+            [routerLink]="['/projekty', project.title]"
+            [alt]="project.title"
+            fill
+          />
+        </div>
       </div>
     </div>
   </div>

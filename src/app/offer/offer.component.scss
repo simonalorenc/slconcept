@@ -12,13 +12,13 @@ li {
 
 .border-right {
   border-right: none;
-  border-bottom: solid 0.5px #ece9e4;
+  border-bottom: solid 1px global.$background-primary;
 }
 
 @media (min-width: 768px) {
   /* For large screens */
   .border-right {
-    border-right: solid 0.5px #ece9e4;
+    border-right: solid 1px global.$background-primary;
     border-bottom: none;
   }
 }

@@ -3,5 +3,6 @@ export interface Project {
   title: string;
   basePath: string;
   mainImage: string;
+  mainImageAlt: string;
   images: string[];
 }

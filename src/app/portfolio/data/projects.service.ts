@@ -12,6 +12,7 @@ export class ProjectsService {
       title: 'Mieszkanie vintage w Krakowie',
       basePath: 'portfolio/1/',
       mainImage: '3.avif',
+      mainImageAlt: 'Stylowe wnętrze vintage z żółtą sofą, drewnianą wyspą kuchenną i eleganckimi lampami',
       images: [
         '1.avif',
         '2.avif',
@@ -34,7 +35,8 @@ export class ProjectsService {
       id: 'mieszkanie_na_poddaszu_w_krakowie',
       title: 'Mieszkanie na poddaszu w Krakowie',
       basePath: 'portfolio/2/',
-      mainImage: '1.avif',
+      mainImage: '6.avif',
+      mainImageAlt: 'Nowoczesna kuchnia vintage z czarnymi oraz ciemnymi zielonymi szafkami, białymi płytkami cegiełkami, drewnianym stołem i wiklinowymi krzesłami',
       images: [
         '1.avif',
         '2.avif',
@@ -56,6 +58,7 @@ export class ProjectsService {
       title: 'Eleganckie mieszkanie na Krakowskim Podgórzu',
       basePath: 'portfolio/3/',
       mainImage: '3.avif',
+      mainImageAlt: 'Elegancki, jasny,nowoczesny salon z aneksem kuchennym z szarym narożnikiem, drewnianą wyspą i okrągłym białym stołem',
       images: [
         '1.avif',
         '2.avif',
@@ -73,6 +76,7 @@ export class ProjectsService {
       title: 'Mieszkanie w Mielcu',
       basePath: 'portfolio/4/',
       mainImage: '3.avif',
+      mainImageAlt: 'Minimalistyczny projekt wnętrza salonu z zieloną sofą, drewnianym stołem i czarnymi krzesłami',
       images: [
         '1.avif',
         '2.avif',
@@ -99,6 +103,7 @@ export class ProjectsService {
       title: 'Łazienka w kolorach ziemi',
       basePath: 'portfolio/5/',
       mainImage: '1.avif',
+      mainImageAlt: 'Jasna, nowoczesna łazienka w odcieniach beżu z drewnianymi elementami, ryflowanymi płytkami, owalnym lustrem, kinkietami kulami oraz płytkami lastryko',
       images: ['1.avif', '2.avif', '3.avif', '4.avif'],
     },
     {
@@ -106,6 +111,7 @@ export class ProjectsService {
       title: 'Mieszkanie vintage w Krakowie',
       basePath: 'portfolio/6/',
       mainImage: '1.avif',
+      mainImageAlt: 'Projekt wnętrza salonu z aneksem kuchennym w stylu vintage, retro, eklektycznym z ceglaną sofą',
       images: [
         '1.avif',
         '2.avif',
@@ -122,6 +128,7 @@ export class ProjectsService {
       title: 'Elegancka kuchnia w Szczecinie',
       basePath: 'portfolio/7/',
       mainImage: '1.avif',
+      mainImageAlt: 'Projekt eleganckiej kuchni w stylu modern classic z granatowymi oraz białymi szafkami.',
       images: ['1.avif', '2.avif', '3.avif', '4.avif', '5.avif'],
     },
     {
@@ -129,6 +136,7 @@ export class ProjectsService {
       title: 'Łazienka w Szczecinie',
       basePath: 'portfolio/8/',
       mainImage: '1.avif',
+      mainImageAlt: 'Projekt łazienki z zielonymi płytkami w kształcie rybiej łuski, drewnianymi meblami, płytkami imitującymi lastryko',
       images: ['1.avif', '2.avif', '3.avif', '4.avif'],
     },
     {
@@ -136,6 +144,7 @@ export class ProjectsService {
       title: 'Dom pod Mielcem',
       basePath: 'portfolio/9/',
       mainImage: '4.avif',
+      mainImageAlt: 'Nowoczesna kuchnia w odcieniach bladego różu i beżu z wyspą kuchenną z ryflowanym wykończeniem',
       images: [
         '1.avif',
         '2.avif',
@@ -157,6 +166,7 @@ export class ProjectsService {
       title: 'Dom pod Mielcem w jasnych odcieniach',
       basePath: 'portfolio/10/',
       mainImage: '1.avif',
+      mainImageAlt: 'Projekt jasnego salonu z elementami boho, dużym beżowym narożnikiem, drewnianymi lamelami, wiklinowymi krzesłami z czarnym wykończeniem oraz drewnianym stołem',
       images: [
         '1.avif',
         '2.avif',
@@ -173,6 +183,7 @@ export class ProjectsService {
       title: 'Dom Mielec',
       basePath: 'portfolio/11/',
       mainImage: '1.avif',
+      mainImageAlt: 'Nowoczesna sypialnia z dużym łóżkiem z szarym wezgłowiem, wiszącymi lampami kulami i drewnianymi lamelami',
       images: [
         '1.avif',
         '2.avif',
@@ -190,6 +201,7 @@ export class ProjectsService {
       title: 'Kuchnia w Szczecinie',
       basePath: 'portfolio/12/',
       mainImage: '1.avif',
+      mainImageAlt: 'Projekt kuchni z zielonymi, oliwkowymi szafkami dolnymi oraz drewnianymi ryflowanymi szafkami górnymi',
       images: ['1.avif', '2.avif', '3.avif'],
     },
     {
@@ -197,6 +209,7 @@ export class ProjectsService {
       title: 'Łazienka w stylu loftowym',
       basePath: 'portfolio/13/',
       mainImage: '1.avif',
+      mainImageAlt: 'Łazienka w stylu loft z cegłą, czarnymi płytkami cegiełkami, wanną wolnostojącą i płytkami imitującymi beton',
       images: ['1.avif', '2.avif', '3.avif', '4.avif'],
     },
     {
@@ -204,6 +217,7 @@ export class ProjectsService {
       title: 'Mieszkanie w Mielcu',
       basePath: 'portfolio/14/',
       mainImage: '4.avif',
+      mainImageAlt: 'Salon z drewnianym parkietem, drewnianym stołem, czarnymi krzesłami w stylu skandynawskim oraz regałem z roślinami',
       images: [
         '1.avif',
         '2.avif',
@@ -219,6 +233,7 @@ export class ProjectsService {
       title: 'Nowoczesne mieszkanie w Krakowie',
       basePath: 'portfolio/15/',
       mainImage: '1.avif',
+      mainImageAlt: 'Nowoczesny salon z aneksem kuchennym z narożnikiem w kolorze butelkowa zieleń, czarnym okrągłym stołem i szarymi welurowymi krzesłami',
       images: [
         '1.avif',
         '2.avif',
@@ -235,6 +250,7 @@ export class ProjectsService {
       title: 'Elegancki dom pod Mielcem',
       basePath: 'portfolio/16/',
       mainImage: '9.avif',
+      mainImageAlt: 'Elegancka sypialnia z dużym łóżkiem z welurowymi panelami, czarną ścianą, wiszącymi lampami i lamelami',
       images: [
         '1.avif',
         '2.avif',

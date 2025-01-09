@@ -54,7 +54,7 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'eleganckie_mieszkanie_na_krakowskim_podgórzu',
+      id: 'eleganckie_mieszkanie_na_krakowskim_podgorzu',
       title: 'Eleganckie mieszkanie na Krakowskim Podgórzu',
       basePath: 'portfolio/3/',
       mainImage: '3.avif',
@@ -99,7 +99,7 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'łazienka_w_kolorach_ziemi',
+      id: 'lazienka_w_kolorach_ziemi',
       title: 'Łazienka w kolorach ziemi',
       basePath: 'portfolio/5/',
       mainImage: '1.avif',
@@ -107,7 +107,7 @@ export class ProjectsService {
       images: ['1.avif', '2.avif', '3.avif', '4.avif'],
     },
     {
-      id: 'mieszkanie_vintage_kraków',
+      id: 'mieszkanie_vintage_krakow',
       title: 'Mieszkanie vintage w Krakowie',
       basePath: 'portfolio/6/',
       mainImage: '1.avif',
@@ -132,7 +132,7 @@ export class ProjectsService {
       images: ['1.avif', '2.avif', '3.avif', '4.avif', '5.avif'],
     },
     {
-      id: 'łazienka_w_szczecinie',
+      id: 'lazienka_w_szczecinie',
       title: 'Łazienka w Szczecinie',
       basePath: 'portfolio/8/',
       mainImage: '1.avif',
@@ -162,8 +162,8 @@ export class ProjectsService {
       ],
     },
     {
-      id: 'dom_pod_mielcem_w_jasnych_odcieniach',
-      title: 'Dom pod Mielcem w jasnych odcieniach',
+      id: 'dom_pod_mielcem_w_jasnych_barwach',
+      title: 'Dom pod Mielcem w jasnych barwach',
       basePath: 'portfolio/10/',
       mainImage: '1.avif',
       mainImageAlt: 'Projekt jasnego salonu z elementami boho, dużym beżowym narożnikiem, drewnianymi lamelami, wiklinowymi krzesłami z czarnym wykończeniem oraz drewnianym stołem',
@@ -180,7 +180,7 @@ export class ProjectsService {
     },
     {
       id: 'dom_mielec',
-      title: 'Dom Mielec',
+      title: 'Dom pod Mielcem',
       basePath: 'portfolio/11/',
       mainImage: '1.avif',
       mainImageAlt: 'Nowoczesna sypialnia z dużym łóżkiem z szarym wezgłowiem, wiszącymi lampami kulami i drewnianymi lamelami',
@@ -205,7 +205,7 @@ export class ProjectsService {
       images: ['1.avif', '2.avif', '3.avif'],
     },
     {
-      id: 'łazienka_w_stylu_loftowym',
+      id: 'lazienka_w_stylu_loftowym',
       title: 'Łazienka w stylu loftowym',
       basePath: 'portfolio/13/',
       mainImage: '1.avif',

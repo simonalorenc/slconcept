@@ -5,7 +5,13 @@
   color: global.$background-primary;
 }
 
-.img-thumb {
-  max-height: 30vh;
-  width: auto;
+#lightgallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+img {
+  height: 40vh;
 }

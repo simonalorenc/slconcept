@@ -201,7 +201,7 @@ export class ProjectsService {
     },
     {
       id: 'mieszkanie_mielec',
-      title: 'Mieszkanie Mielec',
+      title: 'Mieszkanie w Mielcu',
       basePath: 'portfolio/14/',
       mainImage: '4.avif',
       images: [

@@ -36,7 +36,7 @@
 }
 
 .container-border {
-  border-top: 0.5px global.$background-light solid;
+  border-top: 1px global.$background-light solid;
   border-bottom: 0;
 }
 
@@ -58,12 +58,6 @@ a:hover {
   width: 13rem;
 }
 
-.fill {
-  flex: 1;
-}
-
-@media (min-width: 768px) {
-  .text-md-start {
-    text-align: left !important;
-  }
+.contact-name {
+  font-weight: 500;
 }

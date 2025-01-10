@@ -4,10 +4,10 @@
       <div class="pt-5">
         <div class="text-center title">{{ title }}</div>
       </div>
-      <div class="p-5" *ngIf="isBrowser">
+      <div class="pt-4 pb-5" *ngIf="isBrowser">
         <lightgallery id="lightgallery" [settings]="settings">
           <a *ngFor="let image of images" [href]="image" class="gallery-item">
-            <img [src]="image" class="img-responsive" />
+            <img [src]="image" class="img-responsive pointer-scale" />
           </a>
         </lightgallery>
       </div>

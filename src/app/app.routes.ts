@@ -9,7 +9,6 @@ import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.co
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
-  { path: AppRoutes.Main, component: MainPageComponent },
   { path: AppRoutes.PrivacyPolicy, component: PrivacyPolicyComponent },
   { path: AppRoutes.Offer, component: OfferComponent },
   {
@@ -21,5 +20,6 @@ export const routes: Routes = [
     component: PortfolioDetailComponent,
   },
   { path: AppRoutes.AboutMe, component: AboutMeComponent },
+  { path: AppRoutes.Main, component: MainPageComponent },
   { path: '**', component: PageNotFoundComponent },
 ];

@@ -9,9 +9,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
 }
 
-img {
-  height: 40vh;
+.gallery-item img {
+  width: auto;
+  height: 350px;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
 }

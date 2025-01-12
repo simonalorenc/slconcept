@@ -3,6 +3,7 @@ import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectsService } from '../portfolio/data/projects.service';
 import { LightgalleryModule } from 'lightgallery/angular';
+import { SeoService } from '../utils/seo.service';
 
 @Component({
   selector: 'app-portfolio-detail',
@@ -23,7 +24,8 @@ export class PortfolioDetailComponent implements OnInit {
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private route: ActivatedRoute,
-    private projectsService: ProjectsService
+    private projectsService: ProjectsService,
+    private seoService: SeoService
   ) {}
 
   ngOnInit() {
@@ -31,6 +33,7 @@ export class PortfolioDetailComponent implements OnInit {
     this.projectsService.getProject(projectId!).subscribe((project) => {
       this.title = project.title;
       this.images = project.images.map((image) => project.basePath + image);
+      this.seoService.setTitle(project.title);
     });
   }
 }

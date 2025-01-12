@@ -10,6 +10,7 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { SeoService } from '../utils/seo.service';
 
 @Component({
   selector: 'app-header',
@@ -43,7 +44,7 @@ export class HeaderComponent implements OnInit {
   offerPath = AppRoutes.Offer;
   portfolioPath = AppRoutes.Portfolio;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private seoService: SeoService) {}
 
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
@@ -56,6 +57,7 @@ export class HeaderComponent implements OnInit {
   }
 
   private handleNavigationEndEvent(event: NavigationEnd) {
+    this.seoService.setCanonicalUrl(event.url);
     this.collapseIfExpanded();
     const isCurrentRouteRoot = this.router.url === '/';
     this.isScrollAnimation = isCurrentRouteRoot;

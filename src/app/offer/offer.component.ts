@@ -1,5 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../utils/seo.service';
 
 @Component({
   selector: 'app-offer',
@@ -8,4 +9,11 @@ import { Component } from '@angular/core';
   templateUrl: './offer.component.html',
   styleUrl: './offer.component.scss',
 })
-export class OfferComponent {}
+export class OfferComponent implements OnInit {
+
+  constructor(private seoService: SeoService) {}
+
+  ngOnInit(): void {
+    this.seoService.setTitle("Oferta")
+  }
+}

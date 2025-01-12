@@ -23,6 +23,90 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://slconcept.pl/projekty/mieszkanie_vintage_w_krakowie</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/mieszkanie_na_poddaszu_w_krakowie</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/eleganckie_mieszkanie_na_krakowskim_podgorzu</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/mieszkanie_w_mielcu</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/lazienka_w_kolorach_ziemi</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/elegancka_kuchnia_w_szczecinie</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/mieszkanie_vintage_krakow</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/lazienka_w_szczecinie</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/dom_pod_mielcem</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/dom_pod_mielcem_w_jasnych_barwach</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/dom_mielec</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/kuchnia_w_szczecinie</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/lazienka_w_stylu_loftowym</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/mieszkanie_mielec</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/nowoczesne_mieszkanie_w_krakowie</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slconcept.pl/projekty/elegancki_dom_pod_mielcem</loc>
+  <lastmod>2025-01-09T22:16:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+
+<!-- TODO add missing pages -->
+<url>
   <loc>https://slconcept.pl/oferta/</loc>
   <lastmod>2025-01-09T22:16:54+00:00</lastmod>
   <priority>0.80</priority>
@@ -32,6 +116,5 @@
   <lastmod>2025-01-09T22:16:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
 
 </urlset>

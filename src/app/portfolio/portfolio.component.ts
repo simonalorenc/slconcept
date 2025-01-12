@@ -4,6 +4,7 @@ import { Router, RouterModule } from '@angular/router';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ProjectsService } from './data/projects.service';
 import { Project } from './data/project';
+import { SeoService } from '../utils/seo.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -18,13 +19,15 @@ export class PortfolioComponent implements OnInit {
 
   constructor(
     private projectsService: ProjectsService,
-    private router: Router
+    private router: Router,
+    private seoService: SeoService
   ) {}
 
   ngOnInit(): void {
     this.projectsService.getProjects().subscribe((projects) => {
       this.projects = projects;
     });
+    this.seoService.setTitle("Projekty")
   }
 
   goToProject(id: string) {

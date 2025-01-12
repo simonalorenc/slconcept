@@ -14,5 +14,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setTitle('Aranżacja, projektowanie wnętrz');
+    this.seoService.setDescription(
+      'SL Concept - Oferuję profesjonalne projektowanie wnętrz w atrakcyjnych cenach. Tworzę wyjątkowe projekty wnętrz dopasowane do Twoich potrzeb. Skontaktuj się ze mną już dziś!'
+    );
   }
 }

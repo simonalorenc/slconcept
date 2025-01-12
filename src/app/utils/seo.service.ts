@@ -9,10 +9,14 @@ export class SeoService {
   private readonly BASE_TITLE = 'SL Concept';
   private readonly BASE_SUFFIX = 'Aranżacja, projektowanie wnętrz';
 
-  constructor(private titleService: Title) {}
+  constructor(private titleService: Title, private metaService: Meta) {}
 
   setTitle(suffix: String): void {
     this.titleService.setTitle(this.BASE_TITLE + ' - ' + suffix);
+  }
+
+  setDescription(description: string): void {
+    this.metaService.updateTag({ name: 'description', content: description });
   }
 
   setCanonicalUrl(routeUrl: string): void {

@@ -14,6 +14,9 @@ export class OfferComponent implements OnInit {
   constructor(private seoService: SeoService) {}
 
   ngOnInit(): void {
-    this.seoService.setTitle("Oferta")
+    this.seoService.setTitle("Oferta");
+    this.seoService.setDescription(
+      'Oferuję kompleksowe projekty wnętrz, w tym rzuty funkcjonalne, wizualizacje 3D, rysunki techniczne oraz listę zakupów. Wszystko, czego potrzebujesz, aby zrealizować swoją wymarzoną przestrzeń.'
+    );
   }
 }

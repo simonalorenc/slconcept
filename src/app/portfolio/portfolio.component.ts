@@ -27,7 +27,10 @@ export class PortfolioComponent implements OnInit {
     this.projectsService.getProjects().subscribe((projects) => {
       this.projects = projects;
     });
-    this.seoService.setTitle("Projekty")
+    this.seoService.setTitle("Projekty");
+    this.seoService.setDescription(
+      'Zainspiruj się moimi projektami wnętrz i pozwól mi stworzyć dla Ciebie funkcjonalne i estetyczne wnętrze, które spełni Twoje marzenia. Sprawdź portfolio i skontaktuj się ze mną!'
+    );
   }
 
   goToProject(id: string) {

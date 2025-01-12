@@ -14,5 +14,8 @@ export class AboutMeComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.setTitle("O mnie")
+    this.seoService.setDescription(
+      'Architekt wnętrz Simona Lorenc. Absolwentka Wydziału Architektury Politechniki Krakowskiej z doświadczeniem w polskich i zagranicznych pracowniach. Poznajmy się lepiej!'
+    );
   }
 }

@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://slconcept.pl/sitemap.xml
+Sitemap: https://www.slconcept.pl/sitemap.xml

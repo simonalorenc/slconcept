@@ -5,7 +5,7 @@ import { Meta, Title } from '@angular/platform-browser';
   providedIn: 'root',
 })
 export class SeoService {
-  private readonly BASE_URL = 'https://slconcept.pl';
+  private readonly BASE_URL = 'https://www.slconcept.pl';
   private readonly BASE_TITLE = 'SL Concept';
   private readonly BASE_SUFFIX = 'Aranżacja, projektowanie wnętrz';
 

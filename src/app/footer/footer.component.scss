@@ -58,6 +58,16 @@ a:hover {
   width: 13rem;
 }
 
+.instagram {
+  width: 1.75rem;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.instagram:hover {
+  opacity: 0.75;
+
+}
+
 .contact-name {
   font-weight: 500;
 }

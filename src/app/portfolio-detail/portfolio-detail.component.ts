@@ -17,6 +17,7 @@ export class PortfolioDetailComponent implements OnInit {
   images: string[] = [];
 
   settings = {
+    licenseKey: '7E0BB5E1-F90248CD-9DB98F39-FB2BEC10',
     counter: true,
     download: false,
   };

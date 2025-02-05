@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '../utils/seo.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss',
 })

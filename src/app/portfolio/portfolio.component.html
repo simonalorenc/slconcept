@@ -9,20 +9,19 @@
         *ngFor="let project of projects"
         class="col-12 col-md-6 col-xl-4 py-3"
       >
-        <div
-          class="img-preview-container pointer"
-          [routerLink]="['/projekty', project.id]"
-        >
-          <img
-            [ngSrc]="project.basePath + project.mainImage"
-            class="img-preview"
-            [alt]="project.mainImageAlt"
-            fill
-          />
-          <div class="overlay">
-            <div class="overlay-text">{{ project.title }}</div>
+        <a [routerLink]="['/projekty', project.id]">
+          <div class="img-preview-container pointer">
+            <img
+              [ngSrc]="project.basePath + project.mainImage"
+              class="img-preview"
+              [alt]="project.mainImageAlt"
+              fill
+            />
+            <div class="overlay">
+              <div class="overlay-text">{{ project.title }}</div>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
